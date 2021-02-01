@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!-- Carregando o CSS do boostrap, que está na pasta public/css. O /public não precisa ser informado porque já avisamos o express que a pasta de arquivos estáticos é a public-->
+    <link rel="stylesheet" href="/css/bootstrap.css"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog NodeJS</title>
+</head>
+<body>
+    <!--Incluindo um cabecalho para todas as páginas. O sinal > faz com que o arquivo seja buscado na pasta partials -->
+    {{>_navbar}}
+    <div class="container mt-4">
+        {{#if error}}
+            <div class="alert alert-danger">{{error}}</div>
+        {{else}}
+        {{/if}}
+        {{>_msg}}
+        {{{body}}}
+    </div>
+</body>
+<!-- Incluindo as bibliotescas Jquery e Popper que o boostrap usa, e informando onde está o boostrap -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="/js/boostrap.js"></script>
+</html>

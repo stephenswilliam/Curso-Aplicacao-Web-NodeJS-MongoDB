@@ -1,0 +1,35 @@
+<!-- Copiado do site https://getbootstrap.com/docs/5.0/components/navbar/ -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Blog Node.js</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/categoria">Categoria</a>
+        </li>
+        {{#if user}}
+          <!-- testa se esta logado (user é uma variável global)-->
+            <li class="nav-item">
+              <a class="nav-link disabled" href="/usuarios/logout" >Sair</a>
+            </li>
+        {{else}}
+            <li class="nav-item">
+              <a class="nav-link disabled" href="/usuarios/login" >Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="/usuarios/registro" >Registro</a>
+            </li>
+         {{/if}}
+        <li class="nav-item">
+          <a class="nav-link disabled" href="/admin" >Administração</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

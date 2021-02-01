@@ -1,0 +1,74 @@
+---------------EXPRESS
+para instalar o express utilizei o comando abaixo, no diretório do projeto:
+
+npm install express --save
+
+---------------HANDLEBARS
+
+Linguagem simples de mustache(bigode) template para ser usada com html, ex: <b>{{firstname}}</b>
+Facilita a integração com o backend.
+
+para instalar o express utilizei o comando abaixo no diretório do projeto, que instala a versão do handlebars para o express:
+
+npm install --save express-handlebars
+
+---------------BODY PARSER
+
+Biblioteca para receber os parametros de um formulário
+
+para instalar o Body Parser utilizei o comando abaixo no diretório do projeto:
+
+npm install --save body-parser
+
+---------------MONGOOSE
+
+Biblioteca para acessar o MongoDB
+
+para instalar o mongoose utilizei o comando abaixo no diretório do projeto:
+
+npm install --save mongoose
+
+
+---------------BOOTSTRAP
+
+O Bootstrap foi baixado do site https://getbootstrap.com.br/ no formato compactado.
+Descompactei os arquivos na pasta 'public' do projeto. foram criados, automaticamente, os diretórios CSS e JS.
+do projeto.
+
+---------------SESSION
+
+Para configurar sessões.
+
+para instalar o express-session utilizei o comando abaixo no diretório do projeto:
+
+npm install --save express-session
+
+---------------CONNECT FLASH
+
+O módulo Connect-flash para Node.js permite que a aplicação envie uma mensagem para uma página da web. Por exemplo, sempre que um usuário logou com sucesso em sua conta, uma mensagem pisca (exibida) indicando seu sucesso na autenticação.
+O flash tem como pré-requisito o express-session.
+
+para instalar o connect-flash utilizei o comando abaixo no diretório do projeto:
+
+npm install --save connect-flash
+
+---------------PÁGINA INICIAL (INDEX)
+
+Para iniciar a página de index foi incluido o Jumbotrom do Bootstrap, baixado do site:
+https://getbootstrap.com/docs/4.0/components/jumbotron/
+
+---------------CRIPTOGRAFIA DA SENHA
+
+para instalar o bcryptjs utilizei o comando abaixo no diretório do projeto:
+
+npm install --save bcryptjs
+
+---------------PASSPORT
+
+Midleware de autenticação para o express. Existem várias formas de autenticação, por exemplo, pelo facebook, twitter, linkedin, etc. Ver todas estratégias no site passportjs.org. Nesta aplicação esta sendo usada a estratégia LOCAL.
+
+para instalar o passport e a estratégia LOCAL, utilizei os comandos abaixo no diretório do projeto:
+
+npm install --save passport
+npm install --save passport-local
+

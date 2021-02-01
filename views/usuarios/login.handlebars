@@ -1,0 +1,12 @@
+<h4>Login:</h4>
+<div class="card">
+    <div class="card-body">
+        <form action="/usuarios/login" method="POST">
+            <label for="nome">Nome: </label>
+                <input type="email" name="email" value="{{email}}" class="form-control" required>
+            <label for="senha" class="mt-3">Senha:</label>
+                <input type="password" name="senha" value="{{senha}}" class="form-control" required>
+            <button type="submit" class="btn btn-success mt-4">Entrar</button>
+        </form>
+    </div>
+</div>
