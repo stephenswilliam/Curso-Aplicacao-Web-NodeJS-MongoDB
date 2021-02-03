@@ -1,3 +1,8 @@
+
+---------------Aplicação desenvolvida durante o curso:
+
+Curso de Node.js, do canal Victor Lima - Guia do Programador, no YouTube
+
 ---------------EXPRESS
 para instalar o express utilizei o comando abaixo, no diretório do projeto:
 
